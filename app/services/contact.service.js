@@ -12,6 +12,7 @@ class ContactService {
             address: payload.address,
             phone: payload.phone,
             favorite: payload.favorite,
+            hobby: payload.hobby,
         };
         Object.keys(contact).forEach(
             (key) => contact[key] === undefined && delete contact[key]
